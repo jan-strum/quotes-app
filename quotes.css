@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  font-size: 0.9em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#filter-container {
+  display: flex;
+}
+
+.field {
+  margin-left: 20px;
+}
+
+select {
+  width: 75px;
+  margin-left: 5px;
+}
+
+input {
+  margin-left: 5px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+table {
+  width: 90%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table th {
+  text-align: left;
+  font-size: 1.7em;
+  font-weight: 400;
+  padding: 0px 10px 0px 10px;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  padding: 0px 50px 0px 50px;
+}
+
+table tr {
+  border-spacing: 40px;
+}
+
+table td {
+  text-align: left;
+  padding: 10px;
+  border-right: none;
+}
+
+table td:nth-child(-n + 2) {
+  width: 15%;
+}
+
+#alert {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 30;
+}
+
+table td:nth-child(3) {
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-button-container {
+  flex-shrink: 0;
+  width: 100%;
+  bottom: 30px;
+}
+
+.page-button {
+  display: inline-block;
+  transform: scale(1, 1.5);
+}
+
+.page-button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#page-display {
+  display: inline-block;
+  padding: 10px;
+}
